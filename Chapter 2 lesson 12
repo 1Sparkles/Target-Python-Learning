@@ -1,0 +1,32 @@
+#Calculate total amount paid for 2000 shares.
+total_shares = float(input("Enter the number of shares purchased: "))
+price = total_shares * 40.
+print('The price of stock: $', format(price, ',.2f'), sep='')
+
+#Calculate the total invested minus the commission paid.
+commission = price * 0.03
+print('The commission amount paid: $', format(commission, ',.2f'), sep= '')
+
+#Calculate the amount of stocks sold.
+total_amount = float(input("Enter the number of stock sold: "))
+sold_price = total_amount * 42.75
+print('The sold price: $', format(sold_price, ',.2f'), sep= '')
+      
+#Calculate the total commission paid.
+commission = price * 0.03
+print('The commission amount paid: $', format(commission, ',.2f'), sep= '')
+
+#Calculate profit.
+profit = sold_price - commission
+print('The total profit is: $', format(profit, ',.2f'), sep= '')
+
+Answer:
+    
+Enter the number of shares purchased: 2000
+The price of stock: $80,000.00
+The commission amount paid: $2,400.00
+Enter the number of stock sold: 2000
+The sold price: $85,500.00
+The commission amount paid: $2,400.00
+The total profit is: $83,100.00
+>>> 
